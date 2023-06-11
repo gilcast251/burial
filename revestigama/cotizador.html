@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact the team!</title>
+  <link rel="icon" href="img/revestigama-ico.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+</head>
+<body id="body" class="light-mode">
+  <main>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Revestigama" />
+          </a>
+        </div>
+        <div class="navbar-nav-left">
+        </div>
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="FAQ.html" class="opciones-navbar">Preguntas Frecuentes</a>
+          </li>
+          <li>
+            <a href="about.html" class="opciones-navbar">Nosotros</a>
+          </li>
+          <li>
+            <a href="contact.html" class="boton btn-dark">Contáctanos</a>
+          </li>
+          <li>
+            <a href="cotizador.html" class="boton btn-dark">Cotizador</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav-fartest">
+          <li>
+            <div class="icon-darkmode ">
+              <a type="button" name="dark-light" onclick="toggleDarkLight()" title="Toggle dark/light mode" style="cursor: pointer;">
+              <img src="img/icon-darkmode.svg" alt=""></a>
+            </div>
+          </li>
+          
+        </ul>
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+    </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="index.html" class="location-button">Pagina Principal</a></li>
+        <li><a href="FAQ.html" class="opciones-navbar">Preguntas Frecuentes</a></li>
+        <li><a href="about.html" class="opciones-navbar">Nosotros</a></li>
+      </ul>
+      <div class="mobile-menu-bottom">
+        <div><a href="contact.html" class="boton btn-dark">Contácto</a></div>
+        <div><a href="cotizador.html" class="boton btn-dark">Cotizador</a></div>
+      </div>
+</div>
+    <main>
+      <img src="img/logo-pdf.png" id="logo" style="display: none;">
+      <section class="section-contact">
+        <div class="container">
+          <div id="contenido">
+            <div id="agregar-cotizacion">
+              <h1 class="texto-cotizar">Cotiza tu Tope ya!</h1>
+              <p class="texto-cotizar text-md">Elige tu material y facilitanos las medidas de tu tope y recibirás
+                automaticamente tu cotización</p>
+              <div class="divider"></div>
+    
+              <form id="nueva-cotizacion">
+                <div class="form-group">
+                  <label>Nombre Personal o Empresa*</label>
+                  <input type="text" name="cliente" id="cliente" class="form-element" placeholder="Nombre y Apellido" />
+                </div>
+                <div class="form-group">
+    
+                  <label>Material* <span style="font-size: 10px;">(con la compra de 8 metros o más tendrás un 15% de DESCUENTO en el precio del material de elección)</span></label>
+                  <select id="material" name="material" class="form-control">
+                    <option value="">Seleccione</option>
+                    <option value="Granito Gris Leona">Granito Gris Leona</option>
+                    <option value="Granito Blanco Artico">Granito Blanco Artico</option>
+                    <option value="Granito Verde Ubatuba">Granito Verde Ubatuba</option>
+                    <option value="Granito Blanco Itauna">Granito Blanco Itauna</option>
+                    <option value="Granito Negro San Gabriel">Granito Negro San Gabriel</option>
+                    <option value="Mármol Crema Marfil">Mármol Crema Marfil</option>
+                    <option value="Mármol Travertino Romano">Mármol Travertino Romano</option>
+                    <option value="Mármol Marrón Emperador">Mármol Marrón Emperador</option>
+                    <option value="Mármol Volakas">Mármol Volakas</option>
+                    <option value="Cuarzo Blanco Estelar">Cuarzo Blanco Estelar</option>
+                    <option value="Cuarzo Blanco Sky">Cuarzo Blanco Sky</option>
+                    <option value="Cuarzo Negro Estelar">Cuarzo Negro Estelar</option>
+                    <option value="Cuarzo Blanco Calacatta">Cuarzo Blanco Calacatta</option>
+                    <option value="Cuarzo Calacatta Gold">Cuarzo Calacatta Gold</option>
+                  </select>
+                </div>
+                <img class="zoom fade" id="muestra1" src="img/Gris Leona.jpg" style="display:none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra2" src="img/Blanco Artico.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra3" src="img/Verde Ubatuba.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra4" src="img/Blanco Itauna.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra5" src="img/Negro San Gabriel.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra6" src="img/Crema Marfil.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra7" src="img/Travertino.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra8" src="img/Marron Emperador.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra9" src="img/Volakas.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra10" src="img/Blanco Estelar.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra11" src="img/Blanco Sky.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra12" src="img/Negro Estelar.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra13" src="img/Blanco Calacatta.jpg" style="display: none;border-radius: 16px;">
+                <img class="zoom fade"id="muestra14" src="img/Cuarzo Calacatta Gold.jpg" style="display: none;border-radius: 16px;">
+                <div class="form-group">
+                  <label>Ubicacion de la Obra* <span style="font-size: 10px;">(en base a la ubicación de la obra y al metraje calculamos el monto del flete)</span></label>
+                  <select id="ubicacion" name="ubicacion" class="form-control">
+                    <option value="">Seleccione</option>
+                    <option value="Caracas">Caracas</option>
+                    <option value="Altos Mirandinos">Altos Mirandinos</option>
+                    <option value="Guarenas-Guatire">Guarenas-Guatire</option>
+                    <option value="La Guaira">La Guaira</option>
+                  </select>
+                </div>
+                <div class="form-group shorter-form">
+                  <label>Metraje*</label>
+                  <input type="number" step="0.01" name="metros" id="metros" min="0" class="form-element"
+                    placeholder="4.5" />
+                </div>
+                <div class="submit-group">
+                  <input type="submit" value="DESCARGAR COTIZACIÓN" />
+                </div>
+    
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Caja de Ubicacion -->
+    <div class="box-location-img">
+      <section class="box-location grid-col-2">
+        <div class="box-text">
+          <h3 class="text-md">Visita nuestro Showroom ubicado en:</h2>
+            <p class="text-sm">
+              Urb. El Cafetal, Av Santa Ana, Calle Guiria con Calle Pampatar Chacao, Baruta
+            </p>
+            <p class="text-sm">Numeros de Contacto:</p>
+            <p class="text-sm"> 0412-9981970 / 0424-2379052</p>
+        </div>
+        <div class="box-text">
+          <div class="mapouter">
+            <div id="mapa" class="gmap_canvas"><iframe width="300" height="250" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Urb.%20El%20Cafetal,%20Av%20Santa%20Ana,%20Calle%20Guiria%20con%20Calle%20Pampatar%20Chacao,%20Baruta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://fmovies-online.net"></a><br>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 250px;
+                  width: 300px;
+                }
+              </style><a href="https://www.embedgooglemap.net">create custom map free</a>
+              <style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 250px;
+                  width: 300px;
+                  border-radius: 16px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Sticky Icons -->
+    <div class="sticky-icon">
+      <a href="https://www.instagram.com/revestigama/" class="Instagram" target="_blank"><i class="fab fa-instagram" style="color: #8a3ab9;"></i> Instagram </a>
+      <a href="https://wa.me/+5804129981970" class="Whatsapp" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366"> </i> Whatsapp </a>   
+     </div>
+    </main>
+    <!-- Footer -->
+    
+    <footer class="footer-distributed">
+    <div class="footer-left">
+      <p class="footer-links">
+        <a class="link-1" href="index.html">Pagina Principal</a>
+        <a href="cotizador.html">Cotizador</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contáctanos</a>
+        <br>
+        <a href="https://wa.me/+5804129981970"><i class="fab fa-whatsapp Whatsapp" style="cursor: pointer;"></i></a>
+        <a href="https://www.instagram.com/revestigama/"><i class="fab fa-instagram Instagram" style="cursor: pointer;"></i></a>
+      </p>
+      <p>Revestigama. Todos los derechos reservados.&copy; 2022</p>
+    </div>
+    
+    </footer>
+    <!-- © 2022 Revestigama. Todos los derechos reservados. -->
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/divisa.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+  </main>
+
+</body>
+
+</html>
