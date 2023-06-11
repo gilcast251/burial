@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <h2 class="text-center my-5 titulo">
+      Administrador de Vuelos Internacionales
+    </h2>
+    <div class="container mt-5 p-5 border-radius color-caja">
+      <div id="contenido" class="row">
+        <div class="col-md-6 agregar-vuelo">
+          <form id="nuevo-vuelo">
+            <legend class="mb-4">Datos para Agendar Vuelos</legend>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label"
+                >Nombre del Pasajero:</label
+              >
+              <div class="col-sm-8 col-lg-8">
+                <input
+                  type="text"
+                  id="pasajero"
+                  name="pasajero"
+                  class="form-control"
+                  placeholder="Nombre Completo"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label"
+                >Cédula de identidad:</label
+              >
+              <div class="col-sm-8 col-lg-8">
+                <input
+                  type="text"
+                  id="cedula"
+                  name="cedula"
+                  class="form-control"
+                  placeholder="Número de cedula"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+              <div class="col-sm-8 col-lg-8">
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  class="form-control"
+                  placeholder="Número de Teléfono"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label"
+                >Fecha de Ida:</label
+              >
+              <div class="col-sm-8 col-lg-8">
+                <input
+                  type="date"
+                  id="fechaida"
+                  name="fechaida"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label"
+                >Fecha de Retorno:</label
+              >
+              <div class="col-sm-8 col-lg-8">
+                <input
+                  type="date"
+                  id="fechareg"
+                  name="fechareg"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label"
+                >Lugar de Salida:</label
+              >
+              <div class="col-sm-8 col-lg-8">
+                <select id="salida" name="salida" class="form-control">
+                  <option value="">Seleccione</option>
+                  <option value="Caracas">Caracas</option>
+                  <option value="Maiquetia">Maiquetia</option>
+                  <option value="Valencia">Valencia</option>
+                  <option value="Bolivar">Ciudad Bolivar</option>
+                  <option value="Maracaibo">Maracaibo</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-lg-4 col-form-label">Destino:</label>
+              <div class="col-sm-8 col-lg-8">
+                <select id="destino" name="destino" class="form-control">
+                  <option value="">Seleccione</option>
+                  <option value="Argentina">Buenos Aires</option>
+                  <option value="Colombia">Bogóta</option>
+                  <option value="Peru">Lima</option>
+                  <option value="Chile">Santiago</option>
+                  <option value="Ecuador">Quito</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-success w-100 d-block">
+                Agendar Vuelo
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2 id="administra" class="mb-4">Administra tus Vuelos</h2>
+          <ul id="vuelos" class="list-group lista-vuelos"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+  </body>
+</html>
