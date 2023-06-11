@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact the team!</title>
+  <link rel="icon" href="img/revestigama-ico.ico">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+</head>
+<body id="body" class="light-mode">
+  <main>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Revestigama" />
+          </a>
+        </div>
+        <div class="navbar-nav-left">
+        </div>
+        <ul class="navbar-nav-right">
+            <li>
+                <a href="FAQ.html" class="opciones-navbar">Preguntas Frecuentes</a>
+              </li>
+              <li>
+                <a href="about.html" class="opciones-navbar">Nosotros</a>
+              </li>
+          <li>
+            <a href="contact.html" class="boton btn-dark">Contáctanos</a>
+          </li>
+          <li>
+            <a href="cotizador.html" class="boton btn-dark">Cotizador</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav-fartest">
+          <li>
+            <div class="icon-darkmode ">
+              <a type="button" name="dark-light" onclick="toggleDarkLight()" title="Toggle dark/light mode" style="cursor: pointer;">
+              <img src="img/icon-darkmode.svg" alt=""></a>
+            </div>
+          </li>
+          
+        </ul>
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+    </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li><a href="index.html" class="location-button">Pagina Principal</a></li>
+            <li><a href="FAQ.html" class="opciones-navbar">Preguntas Frecuentes</a></li>
+            <li><a href="about.html" class="opciones-navbar">Nosotros</a></li>
+          </ul>
+          <div class="mobile-menu-bottom">
+            <div><a href="contact.html" class="boton btn-dark">Contácto</a></div>
+            <div><a href="cotizador.html" class="boton btn-dark">Cotizador</a></div>
+          </div>
+</div>
+    <main>
+      <img src="img/logo-pdf.png" id="logo" style="display: none;">
+      <section class="section-contact">
+        <div class="container" id="contenido"> 
+              <div id="agregar-correo">
+                  <h1 class="texto-cotizar">Contacta nuestro Equipo de Trabajo</h1>
+                  <div class="divider"></div>
+                  <form id="nuevo-correo">
+                    <div class="form-group">
+                      <label>Nombre Completo*</label>
+                      <input type="text" name="nombre" id="nombre" class="form-element" placeholder="Nombre y Apellido" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo*</label>
+                        <input type="email" name="email" id="email" required class="form-element" placeholder="juana.perez@gmail.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Numero Telefónico*</label>
+                        <input type="text" name="telefono" id="telefono" class="form-element" placeholder="0412-555555" />
+                    </div>
+                    <div class="form-group full">
+                        <label for="message">En que te podemos ayudar?*</label>
+                        <textarea name="mensaje" id="mensaje" class="form-element" placeholder="Necesito hacer un tope...."></textarea>
+                    </div>
+                    <div class="submit-group">
+                      <input type="submit" value="Enviar Información" />
+                    </div>
+                  </form>
+              </div>
+        </div>
+      </section>
+    <!-- Caja de Ubicacion -->
+    <div class="box-location-img">
+      <section class="box-location grid-col-2">
+        <div class="box-text">
+          <h3 class="text-md">Visita nuestro Showroom ubicado en:</h2>
+            <p class="text-sm">
+              Urb. El Cafetal, Av Santa Ana, Calle Guiria con Calle Pampatar Chacao, Baruta
+            </p>
+            <p class="text-sm">Numeros de Contacto:</p>
+            <p class="text-sm"> 0412-9981970 / 0424-2379052</p>
+
+        </div>
+        <div class="box-text">
+          <div class="mapouter">
+            <div id="mapa" class="gmap_canvas"><iframe width="300" height="250" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Urb.%20El%20Cafetal,%20Av%20Santa%20Ana,%20Calle%20Guiria%20con%20Calle%20Pampatar%20Chacao,%20Baruta&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://fmovies-online.net"></a><br>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 250px;
+                  width: 300px;
+                }
+              </style><a href="https://www.embedgooglemap.net">create custom map free</a>
+              <style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 250px;
+                  width: 300px;
+                  border-radius: 16px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Sticky Icons -->
+    <div class="sticky-icon">
+      <a href="https://www.instagram.com/revestigama/" class="Instagram" target="_blank"><i class="fab fa-instagram" style="color: #8a3ab9;"></i> Instagram </a>
+      <a href="https://wa.me/+5804129981970" class="Whatsapp" target="_blank"><i class="fab fa-whatsapp" style="color:#25d366"> </i> Whatsapp </a>   
+     </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-distributed">
+    <div class="footer-left">
+      <p class="footer-links">
+        <a class="link-1" href="index.html">Pagina Principal</a>
+        <a href="cotizador.html">Cotizador</a>
+        <a href="about.html">Nosotros</a>
+        <a href="contact.html">Contáctanos</a>
+        <br>
+        <a href="https://wa.me/+5804129981970"><i class="fab fa-whatsapp Whatsapp" style="cursor: pointer;"></i></a>
+        <a href="https://www.instagram.com/revestigama/"><i class="fab fa-instagram Instagram" style="cursor: pointer;"></i></a>
+      </p>
+      <p>Revestigama. Todos los derechos reservados.&copy; 2022</p>
+    </div>
+    
+    </footer>
+  </main>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("owZbnuinA2JLeyjyU");
+   })();
+</script>
+<script src="js/script.js"></script>
+<script src="js/correo.js"></script>
+</body>
+
+</html>
